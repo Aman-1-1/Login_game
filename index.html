@@ -8,54 +8,62 @@
     <style>
         @font-face {
             font-family: 'PokemonGB';
-            src: url('/Assets/fonts/PokemonGb-RAeo.ttf') format('truetype');
+            src: url('./Assets/fonts/VT323-Regular.ttf') format('truetype');
         }
     </style>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gradient-to-b from-orange-300 via-orange-100 ">
-    <div class="flex  absolute items-end h-screen w-screen">
-        <img src="Assets/images/starfield.png" alt="">
+<body class="bg-gradient-to-b from-orange-300 to-orange-100 max-h-[100vh]">
+    <div class="flex absolute items-end justify-center min-w-screen h-svh ">
+        <img src="./Assets/images/starfield.png" alt="">
+        <div class="overlay"></div>
     </div>
-    <div class=" flex h-screen w-screen justify-center items-center">
-       <div class="bg-black/30 backdrop-blur-md rounded-2xl w-[90%] p-6 min-w-[6.25rem] ">
+    
+    <div class="absolute top-5 text-center w-full">
+        <p class="font-[PokemonGB] text-3xl text-white animate-pulse">>>> SYSTEM ONLINE <<<</p>
+    </div>
 
-                <div>   
-                    <p class="font-[PokemonGB] text-white text-2xl text-center">System Uplink</p>
-                </div>
-            <div class="" id="biggerDivAllinfo">
-                <div id="gametag">
-                        <div class="py-3">
-                            <p class="font-[PokemonGB] text-white text-sm">Game Tag</p>
-                        </div>
-                        <div class="pr-3">
-                            <input type="text" class="w-full p-2 rounded bg-white" >
-                        </div>
-                </div>
-            </div>
-                <div id="email">
-                        <div class="py-3">
-                            <p class="font-[PokemonGB] text-white text-sm">Secure Email Address</p>
-                        </div>
-                        <div class="pr-3">
-                            <input type="email" class="w-full p-2 rounded bg-white" name="email" id="email">
-                        </div>
-                </div>
-                <div id="securitykey">
-                        <div class="py-3">
-                            <p class="font-[PokemonGB] text-white text-sm">Security Key</p>
-                        </div>
-                        <div class="pr-3">
-                            <input type="password" class="w-full p-2 rounded bg-white" name="securitykey" id="securitykey">
-                        </div>
-                </div>
-                <div>
-                    <a class="flex justify-end items-center text-white text-sm/12 underline font-[PokemonGB]" href="#">Forgot Password?</a>
-                </div>
-                <div>
-                    <button class="bg-gradient-to-r from-[#DBA862] to-[#826652] text-white p-2 font-[PokemonGB] rounded w-full">Boot Up</button>
-                </div>
-            </div>
-    </div>
+        <div class=" flex h-svh w-screen justify-center items-center ">
+            <div class="bg-black/30 backdrop-blur-md rounded-2xl w-[90%] max-w-[90%] p-6 min-w-[6.25rem]  md:max-w-[50%] lg:max-w-[40%] xl:max-w-[30%] 2xl:max-w-[25%]">
+     
+                     <div class="flex justify-center ">   
+                         <label class="font-[PokemonGB] text-white text-5xl text-center ">System Uplink</label>
+                     </div>
+                 <div class="" id="biggerDivAllinfo">
+                     <div id="gametag">
+                             <div class="py-3">
+                                 <label class="font-[PokemonGB] text-white text-2xl">Game Tag</label>
+                             </div>
+                             <div class="pr-3">
+                                 <input type="text" class="w-full p-2 rounded bg-white outline-none" >
+                             </div>
+                     </div>
+                 </div>
+                     <div id="email">
+                             <div class="py-3">
+                                 <label class="font-[PokemonGB] text-white text-2xl">Secure Email Address</label>
+                             </div>
+                             <div class="pr-3">
+                                 <input type="email" class="w-full p-2 rounded bg-white outline-none" name="email" id="realemail">
+                             </div>
+                     </div>
+                     <div id="securitykey">
+                             <div class="py-3">
+                                 <label for="securitykey1" class="font-[PokemonGB] text-white text-2xl">Security Key</label>
+                             </div>
+                             <div class="pr-3">
+                                 <input type="password" class="w-full p-2 rounded bg-white outline-none" name="securitykey" id="securitykey1">
+                             </div>
+                     </div>
+                     <div>
+                         <label class="p-1 flex justify-end items-center text-white text-[1rem] underline font-[PokemonGB]" href="#">Forgot Password?</label>
+                     </div>
+                     
+                     <div>
+                         <button type="submit" class="bg-gradient-to-r from-[#DBA862] to-[#826652] text-xl text-white p-2 font-[PokemonGB] rounded w-full hover:opacity-80 active:scale-108" id="btn">Boot Up</button>
+                     </div>
+                 </div>
+         </div>
+
 </body>
 </html>
