@@ -14,53 +14,58 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gradient-to-b from-orange-300 to-orange-100 max-h-[100vh]">
-    <div class="flex absolute items-end justify-center min-w-screen h-svh ">
-        <img src="./Assets/images/starfield.png" alt="">
-        <div class="overlay"></div>
+    <div class="absolute h-full w-full flex ">
+        <div class=" absolute flex  items-end justify-center min-w-[100%] h-svh sm:justify-start">
+            <img class=" " src="./Assets/images/starfield.png" alt="">
+        </div>
+        <div class="  hidden flex justify-end items-end h-svh sm:min-w-[100%] sm:flex ">
+            <img class=" " src="./Assets/images/bg-img.png" alt="">
+        </div>
     </div>
+    
     
     <div class="absolute top-5 text-center w-full">
         <p class="font-[PokemonGB] text-3xl text-white animate-pulse">>>> SYSTEM ONLINE <<<</p>
     </div>
 
         <div class=" flex h-svh w-screen justify-center items-center ">
-            <div class="bg-black/30 backdrop-blur-md rounded-2xl w-[90%] max-w-[90%] p-6 min-w-[6.25rem]  md:max-w-[50%] lg:max-w-[40%] xl:max-w-[30%] 2xl:max-w-[25%]">
+            <div class="bg-black/30 backdrop-blur-md rounded-2xl w-[90%] max-w-[90%] p-6 min-w-[6.25rem] sm:max-w-[60%]  md:max-w-[55%] lg:max-w-[40%] xl:max-w-[30%] 2xl:max-w-[25%]">
      
                      <div class="flex justify-center ">   
                          <label class="font-[PokemonGB] text-white text-5xl text-center ">System Uplink</label>
                      </div>
-                 <div class="" id="biggerDivAllinfo">
+                 <div class="" id="">
                      <div id="gametag">
-                             <div class="py-3">
+                             <div class="py-2">
                                  <label class="font-[PokemonGB] text-white text-2xl">Game Tag</label>
                              </div>
-                             <div class="pr-3">
+                             <div class="pr-2">
                                  <input type="text" class="w-full p-2 rounded bg-white outline-none" >
                              </div>
                      </div>
                  </div>
-                     <div id="email">
-                             <div class="py-3">
+                     <div id="">
+                             <div class="py-2">
                                  <label class="font-[PokemonGB] text-white text-2xl">Secure Email Address</label>
                              </div>
-                             <div class="pr-3">
-                                 <input type="email" class="w-full p-2 rounded bg-white outline-none" name="email" id="realemail">
+                             <div class="pr-2">
+                                 <input type="email" class="w-full p-2 rounded bg-white outline-none" name="" id="">
                              </div>
                      </div>
-                     <div id="securitykey">
-                             <div class="py-3">
-                                 <label for="securitykey1" class="font-[PokemonGB] text-white text-2xl">Security Key</label>
+                     <div id="">
+                             <div class="py-2">
+                                 <label for="" class="font-[PokemonGB] text-white text-2xl">Security Key</label>
                              </div>
-                             <div class="pr-3">
-                                 <input type="password" class="w-full p-2 rounded bg-white outline-none" name="securitykey" id="securitykey1">
+                             <div class="pr-2">
+                                 <input type="password" class="w-full p-2 rounded bg-white outline-none" name="" id="">
                              </div>
                      </div>
                      <div>
-                         <label class="p-1 flex justify-end items-center text-white text-[1rem] underline font-[PokemonGB]" href="#">Forgot Password?</label>
+                         <label class="p-2 flex justify-end items-center text-white text-[1rem] underline font-[PokemonGB]" href="#">Forgot Password?</label>
                      </div>
                      
                      <div>
-                         <button type="submit" class="bg-gradient-to-r from-[#DBA862] to-[#826652] text-xl text-white p-2 font-[PokemonGB] rounded w-full hover:opacity-80 active:scale-108" id="btn">Boot Up</button>
+                         <button type="submit" class="bg-gradient-to-r from-[#826652] to-[#DBA862] text-2xl text-white p-2 font-[PokemonGB] rounded w-full hover:opacity-80 active:scale-108" id="btn">Boot Up</button>
                      </div>
                  </div>
          </div>
